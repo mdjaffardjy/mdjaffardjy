@@ -1,6 +1,6 @@
 # Repositories
 
-During my PhD, I aimed to study reuse in bioinformatics workflows, specifically in the next generation systems Nextflow and Snakemake. Here is an overview of the main repositories linked to that project.
+During [my PhD](https://theses.fr/2023UPASG059), I aimed to study reuse in bioinformatics workflows, specifically in the next generation systems Nextflow and Snakemake. Here is an overview of the main repositories linked to that project.
 
 ## Intro
 
@@ -14,8 +14,8 @@ I chose to do so on public GitHub repositories in order to get a large amount of
 A crucial information in order to compare workflows is the workflows' functions, or the bioinformatics operations that the workflows are performing.
 As this information was not readily available, I had to analyze the workflows' code to extract the bioinformatics tools. For further information, I used other databases to enrich this database. In particular, the [bio.tools](https://bio.tools/) was used to get semantic annotations of bioinformatics tools in the [EDAM](https://edamontology.org/EDAM.owl) ontology. 
 
+![workflow analysis tool structure](images/archi.png?raw=true "Title")
 
-(image outil wf to bt + légende + citation)
 Workflow extraction and annotation process. It is composed of three major units : i) CrawlWF retrieves and extracts GitHub workflows, ii) ParsWF analyses the workflows to extract significant information, and iii) WF2BT retrieves the bio.tools annotations linked to the workflows' tools.
 
 This process was first elaborated and implemented for Snakemake workflows in 
@@ -31,13 +31,5 @@ After collectif the workflows, I conducted investigations on the reuse in the Ne
 This investigation was conducted at several levels (reuse of steps, reuse of code, reuse of tools) by proposing similarity metrics and applying them to the corpus.
 The results can be found in [this repository](https://github.com/mdjaffardjy/Reuse_in_processes).
 
-During an internship I co-supervized, a similarity study on the 
-
-
-
-
-TODO :
-- link to paper
-- link to thesis
-- add images
+During an internship I co-supervized, a [similarity study](https://github.com/mdjaffardjy/graph_parsing) focused on the structure of the workflows was also conducted on the graphs, using graph comparison algorithms such as graphmdl and gspan. 
 
